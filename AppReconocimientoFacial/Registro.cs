@@ -16,5 +16,20 @@ namespace AppReconocimientoFacial
         {
             InitializeComponent();
         }
+
+        private void txtTelefono_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
