@@ -58,6 +58,10 @@ namespace AppReconocimientoFacial
                 Color color = colorDialog1.Color;
                 this.BackColor = color;
             }
+
+            else
+                this.BackColor = Color.AliceBlue;
+
         }
 
        
