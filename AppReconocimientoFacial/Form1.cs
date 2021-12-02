@@ -57,6 +57,7 @@ namespace AppReconocimientoFacial
             {
                 Color color = colorDialog1.Color;
                 this.BackColor = color;
+                String ola = "klalla";
             }
         }
 
