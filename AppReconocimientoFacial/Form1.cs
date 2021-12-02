@@ -59,6 +59,10 @@ namespace AppReconocimientoFacial
                 this.BackColor = color;
                 String ola = "klalla";
             }
+
+            else
+                this.BackColor = Color.AliceBlue;
+
         }
 
        
