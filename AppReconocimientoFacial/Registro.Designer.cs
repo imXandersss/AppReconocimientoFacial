@@ -30,6 +30,10 @@ namespace AppReconocimientoFacial
         private void InitializeComponent()
         {
             this.txtTelefono = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -57,10 +61,6 @@ namespace AppReconocimientoFacial
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label14 = new System.Windows.Forms.Label();
             this.txtTelefono.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -103,6 +103,39 @@ namespace AppReconocimientoFacial
             this.txtTelefono.TabIndex = 0;
             this.txtTelefono.Paint += new System.Windows.Forms.PaintEventHandler(this.txtTelefono_Paint);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(272, 379);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(67, 13);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Agendar cita";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(275, 403);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 28;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(30, 403);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(195, 86);
+            this.textBox2.TabIndex = 27;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(29, 379);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(30, 13);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Nota";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(190, 514);
@@ -120,6 +153,7 @@ namespace AppReconocimientoFacial
             this.btnCancelar.TabIndex = 24;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -129,6 +163,7 @@ namespace AppReconocimientoFacial
             this.btnGuardar.TabIndex = 23;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // comboBox2
             // 
@@ -358,39 +393,6 @@ namespace AppReconocimientoFacial
             this.pictureBox1.Size = new System.Drawing.Size(142, 113);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(29, 379);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(30, 13);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Nota";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(30, 403);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 86);
-            this.textBox2.TabIndex = 27;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(275, 403);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 28;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(272, 379);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 13);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "Agendar cita";
             // 
             // Registro
             // 

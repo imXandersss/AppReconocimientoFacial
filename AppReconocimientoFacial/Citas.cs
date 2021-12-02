@@ -10,31 +10,11 @@ using System.Windows.Forms;
 
 namespace AppReconocimientoFacial
 {
-    public partial class Registro : Form
+    public partial class Citas : Form
     {
-        public Registro()
+        public Citas()
         {
             InitializeComponent();
-        }
-
-        private void txtTelefono_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
