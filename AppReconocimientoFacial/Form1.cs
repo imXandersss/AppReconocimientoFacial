@@ -29,14 +29,10 @@ namespace AppReconocimientoFacial
             dataGridView1.DataSource = objeto.MostrarProd();
         }
 
-        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Registro registro = new Registro();
+            registro.ShowDialog();
         }
 
         private void registroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,8 +56,7 @@ namespace AppReconocimientoFacial
                 
             }
 
-            else
-                this.BackColor = Color.AliceBlue;
+            
 
         }
 

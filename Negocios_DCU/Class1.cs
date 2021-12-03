@@ -31,16 +31,16 @@ namespace Negocios_DCU
         {
             objetoCD.Modificar(IdCita, IdCliente, nombreCliente, Convert.ToDateTime(fecha), Comentario);
         }
-        public void EliminarPRod(string IdCita)
+        public void EliminarPRod(int IdCita)
         {
-            objetoCD.Eliminar(Convert.ToInt32 (IdCita));
+            objetoCD.Eliminar(IdCita);
         }
 
-        //public DataTable BuscarProd(string Descripcion)
-        //{
-        //    DataTable tabla = new DataTable();
-        //    tabla = objetoCD.Buscar(Descripcion);
-        //    return tabla;
-        //}
+        public DataTable BuscarProd(string Descripcion)
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.Buscar(Descripcion);
+            return tabla;
+        }
     }
 }
