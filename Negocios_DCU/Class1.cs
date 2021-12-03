@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CapaDatos;
 using System.Data;
+using Datos;
 
 
 namespace Negocios_DCU
@@ -12,7 +12,7 @@ namespace Negocios_DCU
     public class Class1
     {
 
-        private Datos objetoCD = new Datos();
+        private DatosClase objetoCD = new DatosClase();
         public bool Editar = false;
         public DataTable MostrarProd()
         {
