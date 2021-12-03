@@ -52,6 +52,7 @@ namespace AppReconocimientoFacial
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("¿ventana","Estas seguro que quiere realizar los cambios?",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Exclamation);
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 objetoCN.Editar = true;
