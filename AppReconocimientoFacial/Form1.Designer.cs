@@ -29,10 +29,10 @@ namespace AppReconocimientoFacial
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +68,6 @@ namespace AppReconocimientoFacial
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inicioToolStripMenuItem,
             this.registroToolStripMenuItem,
             this.personalizarToolStripMenuItem,
             this.ayudaToolStripMenuItem,
@@ -78,13 +77,6 @@ namespace AppReconocimientoFacial
             this.menuStrip1.Size = new System.Drawing.Size(839, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // inicioToolStripMenuItem
-            // 
-            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.inicioToolStripMenuItem.Text = "Inicio";
-            this.inicioToolStripMenuItem.Click += new System.EventHandler(this.inicioToolStripMenuItem_Click);
             // 
             // registroToolStripMenuItem
             // 
@@ -169,6 +161,7 @@ namespace AppReconocimientoFacial
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Centro de estetica y cuidado de la piel";
@@ -187,7 +180,6 @@ namespace AppReconocimientoFacial
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalizarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;

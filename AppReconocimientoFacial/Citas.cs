@@ -14,7 +14,7 @@ namespace AppReconocimientoFacial
     public partial class Citas : Form
     {
         Class1 objetoCN = new Class1();
-        private string IdCita;
+        private int IdCita;
 
         public Citas()
         {
@@ -44,7 +44,6 @@ namespace AppReconocimientoFacial
             txtComentario.Clear();
             txtNombre.Clear();
             txtIDcliente.Clear();
-            txtCita.Clear();
             dateTimePicker1.Value = DateTime.Today;
             
 
@@ -55,7 +54,7 @@ namespace AppReconocimientoFacial
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 objetoCN.Editar = true;
-                txtCita.Text = dataGridView1.CurrentRow.Cells["IdCita"].Value.ToString();
+                IdCita = Convert.ToInt32(dataGridView1.CurrentRow.Cells["IdCita"].Value.ToString());
                 txtIDcliente.Text = dataGridView1.CurrentRow.Cells["IdCliente"].Value.ToString();
                 txtNombre.Text = dataGridView1.CurrentRow.Cells["nombreCliente"].Value.ToString();
                 txtComentario.Text = dataGridView1.CurrentRow.Cells["comentario"].Value.ToString();
@@ -70,7 +69,7 @@ namespace AppReconocimientoFacial
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                IdCita = dataGridView1.CurrentRow.Cells["IdCita"].Value.ToString();
+                IdCita = Convert.ToInt32(dataGridView1.CurrentRow.Cells["IdCita"].Value.ToString());
                 objetoCN.EliminarPRod(IdCita);
                 MessageBox.Show("Eliminado correctamente");
                 
@@ -104,7 +103,7 @@ namespace AppReconocimientoFacial
                 {
                     
 
-                    objetoCN.EditarProd(Convert.ToInt32(txtCita.Text), Convert.ToInt32(txtIDcliente.Text), txtNombre.Text, dateTimePicker1.Value.ToString(), txtComentario.Text);
+                    objetoCN.EditarProd(IdCita, Convert.ToInt32(txtIDcliente.Text), txtNombre.Text, dateTimePicker1.Value.ToString(), txtComentario.Text);
                     MessageBox.Show("se edito correctamente");
                     MostrarAgenda();
                     limpiarForm();
@@ -117,6 +116,37 @@ namespace AppReconocimientoFacial
                 {
                     MessageBox.Show("no se pudo editar los datos por: " + ex);
                 }
+            }
+        }
+
+        private void BuscarCitas()
+        {
+            Class1 objeto1 = new Class1();
+            dataGridView1.DataSource = objeto1.BuscarProd(txtNombre.Text);
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                BuscarCitas();
+                limpiarForm();
+
+                if (dataGridView1.RowCount <= 1)
+                {
+                    MessageBox.Show("no se encontro ningun archivo, revise el nombre y vuelvalo a escribir");
+                    MostrarAgenda();
+                    limpiarForm();
+                }
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Se produjo un error en el sistema");
+                MostrarAgenda();
+                limpiarForm();
             }
         }
     }
