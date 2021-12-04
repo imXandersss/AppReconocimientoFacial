@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Datos;
+using System;
 using System.Data;
-using Datos;
 
 
 namespace Negocios_DCU
@@ -27,7 +23,7 @@ namespace Negocios_DCU
         {
             objetoCD.Insertar(IdCliente, nombreCliente, Convert.ToDateTime(fecha), Comentario);
         }
-        public void EditarProd( int IdCita ,int IdCliente, string nombreCliente, string fecha, string Comentario)
+        public void EditarProd(int IdCita, int IdCliente, string nombreCliente, string fecha, string Comentario)
         {
             objetoCD.Modificar(IdCita, IdCliente, nombreCliente, Convert.ToDateTime(fecha), Comentario);
         }

@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Negocios_DCU;
+using System;
 using System.Windows.Forms;
-using Negocios_DCU;
 
 namespace AppReconocimientoFacial
 {
@@ -21,9 +14,12 @@ namespace AppReconocimientoFacial
         }
 
 
+
+
+
         private void limpiarForm()
         {
-            
+
             txtNombre.Clear();
             txtCedula.Clear();
             txtEdad.Clear();
@@ -32,15 +28,15 @@ namespace AppReconocimientoFacial
             txtTel.Clear();
 
 
-            for(int i=0; i <checkCondicionPiel.Items.Count; i++)
+            for (int i = 0; i < checkCondicionPiel.Items.Count; i++)
             {
                 checkCondicionPiel.SetItemChecked(i, false);
-                for(int a =0; a <checkEnfermedades.Items.Count; a++)
+                for (int a = 0; a < checkEnfermedades.Items.Count; a++)
                 {
                     checkEnfermedades.SetItemChecked(a, false);
                 }
             }
-            
+
 
         }
 
@@ -57,7 +53,7 @@ namespace AppReconocimientoFacial
                     {
                         //revisar esta parte por los check box
 
-                        objetoCN.InsertarCliente(txtNombre.Text, Convert.ToInt32(txtCedula.Text), Convert.ToInt32(txtEdad.Text), CBgenero.Text, CBNacionalidad.Text, txtEmail.Text, txtTel.Text, CBTipoPiel.Text, checkCondicionPiel.Text, checkEnfermedades.Text,txtNotas.Text);
+                        //objetoCN.InsertarCliente(txtNombre.Text, Convert.ToInt32(txtCedula.Text), Convert.ToInt32(txtEdad.Text), CBgenero.Text, CBNacionalidad.Text, txtEmail.Text, txtTel.Text, CBTipoPiel.Text, txtNotas.Text);
                         MessageBox.Show("se inserto correctamente");
                         limpiarForm();
                     }
@@ -71,7 +67,7 @@ namespace AppReconocimientoFacial
             else if (result == DialogResult.No)
             {
                 limpiarForm();
-                
+
             }
             else if (result == DialogResult.Cancel)
             {
@@ -106,20 +102,11 @@ namespace AppReconocimientoFacial
             txtEdad.Clear();
         }
 
-        private void txtEmail_Click(object sender, EventArgs e)
-        {
-            txtEmail.Clear();
-        }
-
-        private void txtTel_Click(object sender, EventArgs e)
-        {
-            txtTel.Clear();
-        }
     }
 
-        
 
 
-       
-    }
+
+
+}
 
