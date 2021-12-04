@@ -191,6 +191,7 @@ namespace AppReconocimientoFacial
             // 
             // CBgenero
             // 
+            this.CBgenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBgenero.FormattingEnabled = true;
             this.CBgenero.Items.AddRange(new object[] {
             "F",
@@ -249,6 +250,7 @@ namespace AppReconocimientoFacial
             // 
             // CBNacionalidad
             // 
+            this.CBNacionalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBNacionalidad.FormattingEnabled = true;
             this.CBNacionalidad.Items.AddRange(new object[] {
             "Dominicana",
@@ -357,6 +359,7 @@ namespace AppReconocimientoFacial
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(233, 20);
             this.txtNombre.TabIndex = 0;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // panel1
             // 
@@ -387,6 +390,7 @@ namespace AppReconocimientoFacial
             // 
             // CBTonoPiel
             // 
+            this.CBTonoPiel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBTonoPiel.FormattingEnabled = true;
             this.CBTonoPiel.Items.AddRange(new object[] {
             "0-6",
@@ -441,6 +445,7 @@ namespace AppReconocimientoFacial
             // 
             // CBTipoPiel
             // 
+            this.CBTipoPiel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBTipoPiel.FormattingEnabled = true;
             this.CBTipoPiel.Items.AddRange(new object[] {
             "Grasa",
