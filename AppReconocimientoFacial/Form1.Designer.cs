@@ -112,6 +112,7 @@ namespace AppReconocimientoFacial
             this.ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
             this.ayudaToolStripMenuItem1.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem1.Text = "Ayuda";
+            this.ayudaToolStripMenuItem1.Click += new System.EventHandler(this.ayudaToolStripMenuItem1_Click);
             // 
             // label2
             // 
@@ -125,7 +126,7 @@ namespace AppReconocimientoFacial
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(78, 283);
+            this.button1.Location = new System.Drawing.Point(78, 282);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 41);
             this.button1.TabIndex = 3;
@@ -135,16 +136,17 @@ namespace AppReconocimientoFacial
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(78, 339);
+            this.button2.Location = new System.Drawing.Point(78, 338);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 41);
             this.button2.TabIndex = 4;
             this.button2.Text = "Cliente existente";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(78, 86);
+            this.pictureBox1.Location = new System.Drawing.Point(78, 98);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(148, 143);
             this.pictureBox1.TabIndex = 5;

@@ -181,5 +181,15 @@ namespace AppReconocimientoFacial
                 limpiarForm();
             }
         }
+
+        private void txtIDcliente_Click(object sender, EventArgs e)
+        {
+            txtIDcliente.Clear();
+        }
+
+        private void txtNombre_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+        }
     }
 }

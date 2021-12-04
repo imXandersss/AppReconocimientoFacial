@@ -21,9 +21,6 @@ namespace AppReconocimientoFacial
         }
 
 
-        
-
-
         private void limpiarForm()
         {
             
@@ -58,8 +55,9 @@ namespace AppReconocimientoFacial
                 {
                     try
                     {
+                        //revisar esta parte por los check box
 
-                      //objetoCN.InsertarCliente(txtNombre.Text, Convert.ToInt32(txtCedula.Text), Convert.ToInt32(txtEdad.Text), CBgenero.Text, CBNacionalidad.Text, txtEmail.Text, txtTel.Text, CBTipoPiel.Text, txtNotas.Text);
+                        objetoCN.InsertarCliente(txtNombre.Text, Convert.ToInt32(txtCedula.Text), Convert.ToInt32(txtEdad.Text), CBgenero.Text, CBNacionalidad.Text, txtEmail.Text, txtTel.Text, CBTipoPiel.Text, checkCondicionPiel.Text, checkEnfermedades.Text,txtNotas.Text);
                         MessageBox.Show("se inserto correctamente");
                         limpiarForm();
                     }
@@ -88,8 +86,36 @@ namespace AppReconocimientoFacial
             this.Close();
         }
 
-
+        private void btnCapturarRostro_Click(object sender, EventArgs e)
+        {
+            //abrir reconocimiento facial
         }
+
+        private void txtNombre_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+        }
+
+        private void txtCedula_Click(object sender, EventArgs e)
+        {
+            txtCedula.Clear();
+        }
+
+        private void txtEdad_Click(object sender, EventArgs e)
+        {
+            txtEdad.Clear();
+        }
+
+        private void txtEmail_Click(object sender, EventArgs e)
+        {
+            txtEmail.Clear();
+        }
+
+        private void txtTel_Click(object sender, EventArgs e)
+        {
+            txtTel.Clear();
+        }
+    }
 
         
 
