@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Negocios_DCU;
+using System;
 using System.Windows.Forms;
-using Negocios_DCU;
 
 namespace AppReconocimientoFacial
 {
@@ -44,13 +37,13 @@ namespace AppReconocimientoFacial
             txtComentario.Clear();
             txtNombre.Clear();
             txtIDcliente.Clear();
-            dateTimePicker1.Value = DateTime.Today;  
+            dateTimePicker1.Value = DateTime.Today;
 
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            
+
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 objetoCN.Editar = true;
@@ -147,8 +140,8 @@ namespace AppReconocimientoFacial
                 limpiarForm();
                 MessageBox.Show("Ha sido cancelado");
             }
-            
-          
+
+
         }
 
         private void BuscarCitas()
