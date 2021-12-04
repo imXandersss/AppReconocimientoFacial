@@ -143,28 +143,30 @@ namespace Datos
             comando.Parameters.AddWithValue("@enfermedades", enfermedades);
             comando.Parameters.AddWithValue("@nota", nota);
 
-        //    //Executig query + closing database
-        //    comando.ExecuteNonQuery();
-        //    comando.Parameters.Clear();
-        //    CloseBD();
+            //    //Executig query + closing database
+            //    comando.ExecuteNonQuery();
+            //    comando.Parameters.Clear();
+            //    CloseBD();
 
 
-        //}
+            //}
 
-        //public void buscarCliente(int cedula)
-        //{
-        //    //OpenConexion
-        //    comando.Connection = OpenBD();
-        //    comando.CommandText = "Cliente";
-        //    comando.CommandType = CommandType.StoredProcedure;
-        //    //values
-        //    comando.Parameters.AddWithValue("@cedula", cedula);
-        //    //Executig query + closing database
-        //    comando.ExecuteNonQuery();
-        //    comando.Parameters.Clear();
-        //    CloseBD();
+            //public void buscarCliente(int cedula)
+            //{
+            //    //OpenConexion
+            //    comando.Connection = OpenBD();
+            //    comando.CommandText = "Cliente";
+            //    comando.CommandType = CommandType.StoredProcedure;
+            //    //values
+            //    comando.Parameters.AddWithValue("@cedula", cedula);
+            //    //Executig query + closing database
+            //    comando.ExecuteNonQuery();
+            //    comando.Parameters.Clear();
+            //    CloseBD();
 
 
-        //}
+            //}
+        }
     }
 }
+
