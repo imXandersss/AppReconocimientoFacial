@@ -67,16 +67,30 @@ namespace AppReconocimientoFacial
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            DialogResult result = MessageBox.Show("¿Quieres realizar los cambios ?", "Warning",
+            MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
-                IdCita = Convert.ToInt32(dataGridView1.CurrentRow.Cells["IdCita"].Value.ToString());
-                objetoCN.EliminarPRod(IdCita);
-                MessageBox.Show("Eliminado correctamente");
-                
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    IdCita = Convert.ToInt32(dataGridView1.CurrentRow.Cells["IdCita"].Value.ToString());
+                    objetoCN.EliminarPRod(IdCita);
+                    MessageBox.Show("Eliminado correctamente");
+
+                    MostrarAgenda();
+                }
+                else
+                    MessageBox.Show("seleccione una fila por favor");
+
+            }
+            else if (result == DialogResult.No)
+            {
                 MostrarAgenda();
             }
-            else
-                MessageBox.Show("seleccione una fila por favor");
+            else if (result == DialogResult.Cancel)
+            {
+                MessageBox.Show("Ha sido cancelado");
+            }
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -100,52 +114,41 @@ namespace AppReconocimientoFacial
                         MessageBox.Show("no se pudo insertar los datos por: " + ex);
                     }
                 }
+                //EDITAR
+
+                if (objetoCN.Editar == true)
+                {
+                    try
+                    {
+
+
+                        objetoCN.EditarProd(IdCita, Convert.ToInt32(txtIDcliente.Text), txtNombre.Text, dateTimePicker1.Value.ToString(), txtComentario.Text);
+                        MessageBox.Show("se edito correctamente");
+                        MostrarAgenda();
+                        limpiarForm();
+                        objetoCN.Editar = false;
+
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("no se pudo editar los datos por: " + ex);
+                    }
+                }
             }
             else if (result == DialogResult.No)
             {
+                limpiarForm();
                 MostrarAgenda();
             }
             else if (result == DialogResult.Cancel)
             {
+                limpiarForm();
                 MessageBox.Show("Ha sido cancelado");
             }
-
-            if (objetoCN.Editar == false)
-            {
-                try
-                {
-
-                    objetoCN.InsertarPRod(Convert.ToInt32(txtIDcliente.Text), txtNombre.Text, dateTimePicker1.Value.ToString() ,txtComentario.Text);
-                    MessageBox.Show("se inserto correctamente");
-                    MostrarAgenda();
-                    limpiarForm();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("no se pudo insertar los datos por: " + ex);
-                }
-            }
-            //EDITAR
-            if (objetoCN.Editar == true)
-            {
-                try
-                {
-                    
-
-                    objetoCN.EditarProd(IdCita, Convert.ToInt32(txtIDcliente.Text), txtNombre.Text, dateTimePicker1.Value.ToString(), txtComentario.Text);
-                    MessageBox.Show("se edito correctamente");
-                    MostrarAgenda();
-                    limpiarForm();
-                    objetoCN.Editar = false;
-
-                    
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("no se pudo editar los datos por: " + ex);
-                }
-            }
+            
+          
         }
 
         private void BuscarCitas()

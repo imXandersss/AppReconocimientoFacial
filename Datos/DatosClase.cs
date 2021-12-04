@@ -133,6 +133,7 @@ namespace Datos
             comando.CommandText = "UpdateCliente";
             comando.CommandType = CommandType.StoredProcedure;
             //values
+            comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@cedula", cedula);
             comando.Parameters.AddWithValue("@edad", edad);
             comando.Parameters.AddWithValue("@genero", genero);

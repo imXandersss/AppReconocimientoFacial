@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocios_DCU;
 
 namespace AppReconocimientoFacial
 {
     public partial class Registro : Form
     {
+        Class1 objetoCN = new Class1();
+        private int IdCliente;
         public Registro()
         {
             InitializeComponent();
@@ -42,27 +45,41 @@ namespace AppReconocimientoFacial
             }
             
 
-            dateTimePicker1.Value = DateTime.Today;
-
         }
 
-        private void txtTelefono_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("¿Quieres realizar los cambios ?", "Warning",
+            MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                if (objetoCN.Editar == false)
+                {
+                    try
+                    {
+
+                      //  objetoCN.InsertarCliente(txtNombre.Text, Convert.ToInt32(txtCedula.Text), Convert.ToInt32(txtEdad.Text), CBgenero.Text, CBNacionalidad.Text, txtEmail.Text, txtTel.Text, CBTipoPiel.Text, txtNotas.Text);
+                        MessageBox.Show("se inserto correctamente");
+                        limpiarForm();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("no se pudo insertar los datos por: " + ex);
+                    }
+                }
+
+            }
+            else if (result == DialogResult.No)
+            {
+                limpiarForm();
+                
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                limpiarForm();
+                MessageBox.Show("Ha sido cancelado");
+            }
 
         }
 
@@ -71,14 +88,12 @@ namespace AppReconocimientoFacial
             this.Close();
         }
 
-        private void checkedListBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
-        private void Registro_Load(object sender, EventArgs e)
-        {
+        
 
-        }
+
+       
     }
-}
+

@@ -31,10 +31,13 @@ namespace AppReconocimientoFacial
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.txtNota = new System.Windows.Forms.Panel();
-            this.btnBuscar = new System.Windows.Forms.Button();
+
+           
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+           
+
+            this.panel3 = new System.Windows.Forms.Panel();
+
             this.txtNotas = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,6 +58,7 @@ namespace AppReconocimientoFacial
             this.panel1 = new System.Windows.Forms.Panel();
             this.CBTonoPiel = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+
             this.checkCondicionPiel = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.CBTipoPiel = new System.Windows.Forms.ComboBox();
@@ -64,6 +68,15 @@ namespace AppReconocimientoFacial
             this.btnCapturarRostro = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.CBTipoPiel = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+           
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCapturarRostro = new System.Windows.Forms.Button();
+
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtNota.SuspendLayout();
@@ -76,11 +89,9 @@ namespace AppReconocimientoFacial
             // txtNota
             // 
             this.txtNota.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtNota.Controls.Add(this.btnBuscar);
             this.txtNota.Controls.Add(this.panel3);
             this.txtNota.Controls.Add(this.panel2);
             this.txtNota.Controls.Add(this.panel1);
-            this.txtNota.Controls.Add(this.btnCapturarRostro);
             this.txtNota.Controls.Add(this.btnCancelar);
             this.txtNota.Controls.Add(this.btnGuardar);
             this.txtNota.Location = new System.Drawing.Point(353, 1);
@@ -88,23 +99,16 @@ namespace AppReconocimientoFacial
             this.txtNota.Name = "txtNota";
             this.txtNota.Size = new System.Drawing.Size(719, 731);
             this.txtNota.TabIndex = 0;
-            this.txtNota.Paint += new System.Windows.Forms.PaintEventHandler(this.txtTelefono_Paint);
+
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(227, 677);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(140, 47);
-            this.btnBuscar.TabIndex = 33;
-            this.btnBuscar.Text = "Buscar Cliente";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+           
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            
             this.panel3.Controls.Add(this.txtNotas);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Location = new System.Drawing.Point(39, 537);
@@ -115,21 +119,23 @@ namespace AppReconocimientoFacial
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(323, 2);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 17);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "Agendar cita";
+           
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(327, 32);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(296, 22);
-            this.dateTimePicker1.TabIndex = 28;
+            
+
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.txtNotas);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Location = new System.Drawing.Point(29, 436);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(488, 108);
+            this.panel3.TabIndex = 32;
+
             // 
             // txtNotas
             // 
@@ -137,7 +143,11 @@ namespace AppReconocimientoFacial
             this.txtNotas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNotas.Multiline = true;
             this.txtNotas.Name = "txtNotas";
+
             this.txtNotas.Size = new System.Drawing.Size(288, 86);
+
+            this.txtNotas.Size = new System.Drawing.Size(459, 71);
+
             this.txtNotas.TabIndex = 27;
             // 
             // label13
@@ -167,10 +177,16 @@ namespace AppReconocimientoFacial
             this.panel2.Controls.Add(this.txtEdad);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtNombre);
+
             this.panel2.Location = new System.Drawing.Point(39, 31);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(650, 221);
+
+            this.panel2.Location = new System.Drawing.Point(29, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(488, 180);
+
             this.panel2.TabIndex = 31;
             // 
             // CBgenero
@@ -204,7 +220,6 @@ namespace AppReconocimientoFacial
             this.label10.Size = new System.Drawing.Size(42, 17);
             this.label10.TabIndex = 20;
             this.label10.Text = "Email";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // txtEmail
             // 
@@ -213,7 +228,6 @@ namespace AppReconocimientoFacial
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(359, 22);
             this.txtEmail.TabIndex = 19;
-            this.txtEmail.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label9
             // 
@@ -244,10 +258,15 @@ namespace AppReconocimientoFacial
             "Chilena",
             "Colombiana",
             "Puertoriqueña"});
+
             this.CBNacionalidad.Location = new System.Drawing.Point(353, 103);
             this.CBNacionalidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBNacionalidad.Name = "CBNacionalidad";
             this.CBNacionalidad.Size = new System.Drawing.Size(269, 24);
+
+            this.CBNacionalidad.Location = new System.Drawing.Point(265, 84);
+            this.CBNacionalidad.Name = "CBNacionalidad";
+            this.CBNacionalidad.Size = new System.Drawing.Size(203, 21);
             this.CBNacionalidad.TabIndex = 8;
             // 
             // label4
@@ -257,6 +276,10 @@ namespace AppReconocimientoFacial
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 17);
+
+            this.label4.Location = new System.Drawing.Point(262, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Cedula";
             // 
@@ -266,6 +289,9 @@ namespace AppReconocimientoFacial
             this.txtCedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(269, 22);
+            this.txtCedula.Location = new System.Drawing.Point(265, 26);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(203, 20);
             this.txtCedula.TabIndex = 6;
             // 
             // label3
@@ -275,6 +301,9 @@ namespace AppReconocimientoFacial
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 17);
+            this.label3.Location = new System.Drawing.Point(262, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nacionalidad";
             // 
@@ -285,6 +314,10 @@ namespace AppReconocimientoFacial
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 17);
+
+            this.label2.Location = new System.Drawing.Point(9, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Edad";
             // 
@@ -294,6 +327,9 @@ namespace AppReconocimientoFacial
             this.txtEdad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(132, 22);
+            this.txtEdad.Location = new System.Drawing.Point(12, 85);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(100, 20);
             this.txtEdad.TabIndex = 2;
             // 
             // label1
@@ -303,6 +339,10 @@ namespace AppReconocimientoFacial
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 17);
+
+            this.label1.Location = new System.Drawing.Point(9, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre";
             // 
@@ -312,6 +352,10 @@ namespace AppReconocimientoFacial
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(309, 22);
+
+            this.txtNombre.Location = new System.Drawing.Point(12, 26);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(233, 20);
             this.txtNombre.TabIndex = 0;
             // 
             // panel1
@@ -329,6 +373,16 @@ namespace AppReconocimientoFacial
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(650, 201);
+
+            
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.CBTipoPiel);
+            this.panel1.Controls.Add(this.label6);
+           
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(29, 243);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(488, 164);
             this.panel1.TabIndex = 30;
             // 
             // CBTonoPiel
@@ -372,7 +426,8 @@ namespace AppReconocimientoFacial
             this.checkCondicionPiel.Name = "checkCondicionPiel";
             this.checkCondicionPiel.Size = new System.Drawing.Size(188, 123);
             this.checkCondicionPiel.TabIndex = 14;
-            this.checkCondicionPiel.SelectedIndexChanged += new System.EventHandler(this.checkedListBox2_SelectedIndexChanged);
+            
+            
             // 
             // label7
             // 
@@ -466,12 +521,41 @@ namespace AppReconocimientoFacial
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(412, 550);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(105, 38);
+            this.btnCancelar.TabIndex = 24;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(301, 550);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(105, 38);
+            this.btnGuardar.TabIndex = 23;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnCapturarRostro
+            // 
+            this.btnCapturarRostro.Location = new System.Drawing.Point(75, 376);
+            this.btnCapturarRostro.Name = "btnCapturarRostro";
+            this.btnCapturarRostro.Size = new System.Drawing.Size(98, 38);
+            this.btnCapturarRostro.TabIndex = 25;
+            this.btnCapturarRostro.Text = "Capturar rostro";
+            this.btnCapturarRostro.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(113, 316);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(71, 246);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(135, 17);
             this.label12.TabIndex = 1;
@@ -494,11 +578,11 @@ namespace AppReconocimientoFacial
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtNota);
+            this.Controls.Add(this.btnCapturarRostro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Registro";
             this.Text = "Registro";
-            this.Load += new System.EventHandler(this.Registro_Load);
             this.txtNota.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -544,9 +628,6 @@ namespace AppReconocimientoFacial
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtNotas;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
