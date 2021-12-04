@@ -48,7 +48,6 @@ namespace Datos
 
         public DataTable Buscar(string nombreCliente)
         {
-
             comando.Connection = OpenBD();
             comando.CommandText = "BuscarCitas";
             comando.CommandType = CommandType.StoredProcedure;

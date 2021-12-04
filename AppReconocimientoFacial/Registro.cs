@@ -17,6 +17,10 @@ namespace AppReconocimientoFacial
             InitializeComponent();
         }
 
+
+        
+
+
         private void limpiarForm()
         {
             
@@ -26,11 +30,17 @@ namespace AppReconocimientoFacial
             txtEmail.Clear();
             txtNotas.Clear();
             txtTel.Clear();
-           
-            /*
-             * limpiar todos los combo box y checkbox
-             * 
-             */
+
+
+            for(int i=0; i <checkCondicionPiel.Items.Count; i++)
+            {
+                checkCondicionPiel.SetItemChecked(i, false);
+                for(int a =0; a <checkEnfermedades.Items.Count; a++)
+                {
+                    checkEnfermedades.SetItemChecked(a, false);
+                }
+            }
+            
 
             dateTimePicker1.Value = DateTime.Today;
 
@@ -62,6 +72,11 @@ namespace AppReconocimientoFacial
         }
 
         private void checkedListBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Registro_Load(object sender, EventArgs e)
         {
 
         }
