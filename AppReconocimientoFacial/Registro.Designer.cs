@@ -359,7 +359,7 @@ namespace AppReconocimientoFacial
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(233, 20);
             this.txtNombre.TabIndex = 0;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+
             // 
             // panel1
             // 

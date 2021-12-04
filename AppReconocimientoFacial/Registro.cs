@@ -14,7 +14,7 @@ namespace AppReconocimientoFacial
     public partial class Registro : Form
     {
         Class1 objetoCN = new Class1();
-        private int IdCliente;
+        //private int IdCliente;
         public Registro()
         {
             InitializeComponent();
