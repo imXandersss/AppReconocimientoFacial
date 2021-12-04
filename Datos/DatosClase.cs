@@ -101,5 +101,72 @@ namespace Datos
             comando.Parameters.Clear();
             CloseBD();
         }
+        public void insertarCliente(string nombre,int cedula, int edad, string genero,string nacionalidad,string email, string telefono, string tipoPiel, string condicionPiel, string enfermedades, string nota)
+        {
+            //OpenConexion
+            comando.Connection = OpenBD();
+            comando.CommandText = "InsertCliente";
+            comando.CommandType = CommandType.StoredProcedure;
+            //values
+            comando.Parameters.AddWithValue("@nombre",nombre);
+            comando.Parameters.AddWithValue("@cedula", cedula);
+            comando.Parameters.AddWithValue("@edad",edad);
+            comando.Parameters.AddWithValue("@genero",genero);
+            comando.Parameters.AddWithValue("@nacionalidad",nacionalidad);
+            comando.Parameters.AddWithValue("@email",email);
+            comando.Parameters.AddWithValue("@telefono",telefono);
+            comando.Parameters.AddWithValue("@tipoPiel",tipoPiel);
+            comando.Parameters.AddWithValue("@condicionPiel",condicionPiel);
+            comando.Parameters.AddWithValue("@enfermedades",enfermedades);
+            comando.Parameters.AddWithValue("@nota",nota);
+
+            //Executig query + closing database
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            CloseBD();
+
+
+        }
+        public void modificarCliente(string nombre, int cedula, int edad, string genero, string nacionalidad, string email, string telefono, string tipoPiel, string condicionPiel, string enfermedades, string nota)
+        {
+            //OpenConexion
+            comando.Connection = OpenBD();
+            comando.CommandText = "UpdateCliente";
+            comando.CommandType = CommandType.StoredProcedure;
+            //values
+            comando.Parameters.AddWithValue("@cedula", cedula);
+            comando.Parameters.AddWithValue("@edad", edad);
+            comando.Parameters.AddWithValue("@genero", genero);
+            comando.Parameters.AddWithValue("@nacionalidad", nacionalidad);
+            comando.Parameters.AddWithValue("@email", email);
+            comando.Parameters.AddWithValue("@telefono", telefono);
+            comando.Parameters.AddWithValue("@tipoPiel", tipoPiel);
+            comando.Parameters.AddWithValue("@condicionPiel", condicionPiel);
+            comando.Parameters.AddWithValue("@enfermedades", enfermedades);
+            comando.Parameters.AddWithValue("@nota", nota);
+
+            //Executig query + closing database
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            CloseBD();
+
+
+        }
+
+        public void buscarCliente(int cedula)
+        {
+            //OpenConexion
+            comando.Connection = OpenBD();
+            comando.CommandText = "Cliente";
+            comando.CommandType = CommandType.StoredProcedure;
+            //values
+            comando.Parameters.AddWithValue("@cedula", cedula);
+            //Executig query + closing database
+            comando.ExecuteNonQuery();
+            comando.Parameters.Clear();
+            CloseBD();
+
+
+        }
     }
 }
