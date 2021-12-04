@@ -44,8 +44,7 @@ namespace AppReconocimientoFacial
             txtComentario.Clear();
             txtNombre.Clear();
             txtIDcliente.Clear();
-            dateTimePicker1.Value = DateTime.Today;
-            
+            dateTimePicker1.Value = DateTime.Today;  
 
         }
 
