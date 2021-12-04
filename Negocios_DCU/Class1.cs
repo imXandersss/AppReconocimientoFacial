@@ -38,13 +38,17 @@ namespace Negocios_DCU
 
         public void InsertarCliente(string nombre, int cedula, int edad, string genero, string nacionalidad, string email, string telefono, string tipoPiel, string condicionPiel, string enfermedades, string nota)
         {
-           // objetoCD.Insertar(IdCliente, nombreCliente, Convert.ToDateTime(fecha), Comentario);
+            // objetoCD.InsertarCliente(nombre, cedula, edad, genero, nacionalidad, email, telefono, tipoPiel, condicionPiel, enfermedades, nota);
         }
-        public void EditarCliente(int IdCita, int IdCliente, string nombreCliente, string fecha, string Comentario)
+        public void EditarCliente(string nombre, int cedula, int edad, string genero, string nacionalidad, string email, string telefono, string tipoPiel, string condicionPiel, string enfermedades, string nota)
         {
-            objetoCD.Modificar(IdCita, IdCliente, nombreCliente, Convert.ToDateTime(fecha), Comentario);
+            //objetoCD.ModificarCliente(nombre, cedula, edad, genero, nacionalidad, email, telefono, tipoPiel, condicionPiel, enfermedades, nota);
         }
 
+        public void BuscarCliente(int cedula)
+        {
+            //objetoCD.BuscarCliente(cedula);
+        }
 
         public DataTable BuscarProd(string Descripcion)
         {
