@@ -29,6 +29,7 @@ namespace AppReconocimientoFacial
             txtEmail.Clear();
             txtNotas.Clear();
             txtTel.Clear();
+            
            
             /*
              * limpiar todos los combo box y checkbox
@@ -78,8 +79,9 @@ namespace AppReconocimientoFacial
             this.Close();
         }
 
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
 
-
-       
+        }
     }
 }
