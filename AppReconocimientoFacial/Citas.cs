@@ -44,8 +44,7 @@ namespace AppReconocimientoFacial
             txtComentario.Clear();
             txtNombre.Clear();
             txtIDcliente.Clear();
-            dateTimePicker1.Value = DateTime.Today;
-            
+            dateTimePicker1.Value = DateTime.Today;  
 
         }
 
@@ -83,6 +82,9 @@ namespace AppReconocimientoFacial
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("¿ventana", "Estas seguro que quiere realizar los cambios?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+
+           
+
             if (objetoCN.Editar == false)
             {
                 try

@@ -17,6 +17,25 @@ namespace AppReconocimientoFacial
             InitializeComponent();
         }
 
+        private void limpiarForm()
+        {
+            
+            txtNombre.Clear();
+            txtCedula.Clear();
+            txtEdad.Clear();
+            txtEmail.Clear();
+            txtNotas.Clear();
+            txtTel.Clear();
+           
+            /*
+             * limpiar todos los combo box y checkbox
+             * 
+             */
+
+            dateTimePicker1.Value = DateTime.Today;
+
+        }
+
         private void txtTelefono_Paint(object sender, PaintEventArgs e)
         {
 
