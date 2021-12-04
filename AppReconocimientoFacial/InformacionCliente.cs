@@ -27,16 +27,6 @@ namespace AppReconocimientoFacial
             txtNombre.ReadOnly = true;
         }
 
-        private void txtApellido_TextChanged(object sender, EventArgs e)
-        {
-            txtApellido.ReadOnly = true;
-        }
-
-        private void txtFecha_TextChanged(object sender, EventArgs e)
-        {
-            txtFecha.ReadOnly = true;
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             txtEnfermedad.ReadOnly = true;
@@ -50,6 +40,11 @@ namespace AppReconocimientoFacial
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Aqui va el metodo que devuelve el formulario principal
         }
     }
 }

@@ -40,6 +40,7 @@ namespace AppReconocimientoFacial
             this.txtNota = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.fechaPicker = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -139,11 +140,22 @@ namespace AppReconocimientoFacial
             this.fechaPicker.TabIndex = 19;
             this.fechaPicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(137, 521);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 43);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "OK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // InformacionCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 552);
+            this.ClientSize = new System.Drawing.Size(417, 599);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.fechaPicker);
             this.Controls.Add(this.txtNota);
             this.Controls.Add(this.label7);
@@ -156,7 +168,7 @@ namespace AppReconocimientoFacial
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
             this.Name = "InformacionCliente";
-            this.Text = "E";
+            this.Text = "Informacion";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +187,6 @@ namespace AppReconocimientoFacial
         private System.Windows.Forms.TextBox txtNota;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker fechaPicker;
+        private System.Windows.Forms.Button button1;
     }
 }
