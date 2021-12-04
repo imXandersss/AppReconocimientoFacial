@@ -81,9 +81,34 @@ namespace AppReconocimientoFacial
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¿ventana", "Estas seguro que quiere realizar los cambios?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+            DialogResult result = MessageBox.Show("¿Quieres realizar los cambios ?", "Warning",
+            MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                if (objetoCN.Editar == false)
+                {
+                    try
+                    {
 
-           
+                        objetoCN.InsertarPRod(Convert.ToInt32(txtIDcliente.Text), txtNombre.Text, dateTimePicker1.Value.ToString(), txtComentario.Text);
+                        MessageBox.Show("se inserto correctamente");
+                        MostrarAgenda();
+                        limpiarForm();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("no se pudo insertar los datos por: " + ex);
+                    }
+                }
+            }
+            else if (result == DialogResult.No)
+            {
+                MostrarAgenda();
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                MessageBox.Show("Ha sido cancelado");
+            }
 
             if (objetoCN.Editar == false)
             {
