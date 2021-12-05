@@ -108,6 +108,8 @@ namespace AppReconocimientoFacial
                         MessageBox.Show("se inserto correctamente");
                         MostrarAgenda();
                         limpiarForm();
+                        
+
                     }
                     catch (Exception ex)
                     {
@@ -128,7 +130,7 @@ namespace AppReconocimientoFacial
                         limpiarForm();
                         objetoCN.Editar = false;
 
-
+                       
 
                     }
                     catch (Exception ex)
@@ -147,8 +149,11 @@ namespace AppReconocimientoFacial
                 limpiarForm();
                 MessageBox.Show("Ha sido cancelado");
             }
-            
-          
+
+            txtNombre.Text = "Ingrese el nombre del cliente ";
+            txtIDcliente.Text = "ingrese la cedula del cliente sin guiones";
+
+
         }
 
         private void BuscarCitas()
@@ -180,6 +185,16 @@ namespace AppReconocimientoFacial
                 MostrarAgenda();
                 limpiarForm();
             }
+        }
+
+        private void txtNombre_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+        }
+
+        private void txtIDcliente_Click(object sender, EventArgs e)
+        {
+            txtIDcliente.Clear();
         }
     }
 }

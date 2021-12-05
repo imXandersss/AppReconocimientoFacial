@@ -53,10 +53,10 @@ namespace AppReconocimientoFacial
             this.CBTonoPiel = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.checkCondicionPiel = new System.Windows.Forms.CheckedListBox();
+            this.checkEnfermedades = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.CBTipoPiel = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.checkEnfermedades = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@ namespace AppReconocimientoFacial
             this.txtNotas.Location = new System.Drawing.Point(9, 26);
             this.txtNotas.Multiline = true;
             this.txtNotas.Name = "txtNotas";
-            this.txtNotas.Size = new System.Drawing.Size(485, 88);
+            this.txtNotas.Size = new System.Drawing.Size(459, 88);
             this.txtNotas.TabIndex = 27;
             // 
             // label13
@@ -168,6 +168,8 @@ namespace AppReconocimientoFacial
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(270, 20);
             this.txtEmail.TabIndex = 19;
+            this.txtEmail.Text = "example@mail.com";
+            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             // 
             // label9
             // 
@@ -184,6 +186,8 @@ namespace AppReconocimientoFacial
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(173, 20);
             this.txtTel.TabIndex = 17;
+            this.txtTel.Text = "su numero de contacto sin guiones";
+            this.txtTel.Click += new System.EventHandler(this.txtTel_Click);
             // 
             // CBNacionalidad
             // 
@@ -217,6 +221,8 @@ namespace AppReconocimientoFacial
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(173, 20);
             this.txtCedula.TabIndex = 6;
+            this.txtCedula.Text = "Su ID sin guiones";
+            this.txtCedula.Click += new System.EventHandler(this.txtCedula_Click);
             // 
             // label3
             // 
@@ -242,6 +248,8 @@ namespace AppReconocimientoFacial
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(97, 20);
             this.txtEdad.TabIndex = 2;
+            this.txtEdad.Text = "Su edad";
+            this.txtEdad.Click += new System.EventHandler(this.txtEdad_Click);
             // 
             // label1
             // 
@@ -258,6 +266,8 @@ namespace AppReconocimientoFacial
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(273, 20);
             this.txtNombre.TabIndex = 0;
+            this.txtNombre.Text = "Ingrese su nombre y apellido";
+            this.txtNombre.Click += new System.EventHandler(this.txtNombre_Click);
             // 
             // panel1
             // 
@@ -315,6 +325,22 @@ namespace AppReconocimientoFacial
             this.checkCondicionPiel.Size = new System.Drawing.Size(142, 109);
             this.checkCondicionPiel.TabIndex = 14;
             // 
+            // checkEnfermedades
+            // 
+            this.checkEnfermedades.FormattingEnabled = true;
+            this.checkEnfermedades.Items.AddRange(new object[] {
+            "Diabetes",
+            "Alergias",
+            "Embarazo",
+            "Hipertension",
+            "Cancer",
+            "Insuficiencia Cardiaca",
+            "Dermatitis"});
+            this.checkEnfermedades.Location = new System.Drawing.Point(327, 41);
+            this.checkEnfermedades.Name = "checkEnfermedades";
+            this.checkEnfermedades.Size = new System.Drawing.Size(141, 109);
+            this.checkEnfermedades.TabIndex = 10;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -346,22 +372,6 @@ namespace AppReconocimientoFacial
             this.label6.Size = new System.Drawing.Size(62, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Tipo de piel";
-            // 
-            // checkEnfermedades
-            // 
-            this.checkEnfermedades.FormattingEnabled = true;
-            this.checkEnfermedades.Items.AddRange(new object[] {
-            "Diabetes",
-            "Alergias",
-            "Embarazo",
-            "Hipertension",
-            "Cancer",
-            "Insuficiencia Cardiaca",
-            "Dermatitis"});
-            this.checkEnfermedades.Location = new System.Drawing.Point(327, 41);
-            this.checkEnfermedades.Name = "checkEnfermedades";
-            this.checkEnfermedades.Size = new System.Drawing.Size(141, 109);
-            this.checkEnfermedades.TabIndex = 10;
             // 
             // label5
             // 

@@ -60,6 +60,14 @@ namespace AppReconocimientoFacial
 
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //abre la ventana de reconocimiento facial
+        }
+
+        private void ayudaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //abrir una ventana que diga las informaciones importantes a saber
+        }
     }
 }

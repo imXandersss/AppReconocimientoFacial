@@ -44,7 +44,9 @@ namespace AppReconocimientoFacial
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Aqui va el metodo que devuelve el formulario principal
+            this.Close();
+            Form1 form1 = new Form1();
+            form1.Show();
         }
     }
 }
