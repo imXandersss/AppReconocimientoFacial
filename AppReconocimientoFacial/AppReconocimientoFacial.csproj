@@ -127,5 +127,8 @@
       <Name>Prueba2Reconocimiento</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonfoCRUD.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
