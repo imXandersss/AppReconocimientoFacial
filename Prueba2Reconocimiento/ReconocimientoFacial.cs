@@ -15,7 +15,6 @@ using System.IO;
 using System.Threading;
 using System.Diagnostics;
 using Datos;
-using System.Data.SqlClient;
 
 
 namespace Prueba2Reconocimiento
@@ -271,15 +270,10 @@ namespace Prueba2Reconocimiento
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //// hacer la conexion con la base de datos
-            //SqlCommand comando = new SqlCommand("SELECT * FROM Cliente WHERE cedula = @ID", conexion);
-            //comando.Parameters.AddWithValue("@ID", cedula);
-            //conexion.OpenBD();
-            //SqlDataReader registro = comando.ExecuteReader();
-            //if (registro.Read())
-            //{
-            //    //aqui van los txtbox txtNombre.Text = registro["nombre"].ToString();
-            //}
+            int cedula = 2;
+            DatosClase datosClase = new DatosClase();
+
+            datosClase.InformacionCliente(cedula);
         }
     }
 

@@ -14,15 +14,10 @@ namespace AppReconocimientoFacial
     public partial class Registro : Form
     {
         Class1 objetoCN = new Class1();
-        //private int IdCliente;
         public Registro()
         {
             InitializeComponent();
         }
-
-
-        
-
 
         private void limpiarForm()
         {
@@ -124,6 +119,11 @@ namespace AppReconocimientoFacial
         private void txtTel_Click(object sender, EventArgs e)
         {
             txtTel.Clear();
+        }
+
+        private void btnCapturarRostro_Click(object sender, EventArgs e)
+        {
+            //LLAMAR A RECONOCIMIENTO FACIAL DESDE AQUI
         }
     }
 

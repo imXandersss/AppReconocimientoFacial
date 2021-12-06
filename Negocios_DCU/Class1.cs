@@ -21,8 +21,6 @@ namespace Negocios_DCU
             return tabla;
         }
 
-
-
         public void InsertarPRod(int IdCliente, string nombreCliente, string fecha, string Comentario)
         {
             objetoCD.Insertar(IdCliente, nombreCliente, Convert.ToDateTime(fecha), Comentario);

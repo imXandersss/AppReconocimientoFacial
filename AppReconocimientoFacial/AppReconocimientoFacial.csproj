@@ -129,6 +129,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonfoCRUD.jpg" />
+    <None Include="Resources\camara %281%29.png" />
+    <None Include="Resources\camara.png" />
+    <None Include="Resources\guardar-el-archivo.png" />
+    <None Include="Resources\salida-de-emergencia.png" />
+    <None Include="Resources\estetica.jpg" />
     <None Include="Resources\fonfoCRUD.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
