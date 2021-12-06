@@ -111,6 +111,7 @@ namespace AppReconocimientoFacial
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(11, 2);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -161,7 +162,7 @@ namespace AppReconocimientoFacial
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(182, 79);
+            this.label11.Location = new System.Drawing.Point(173, 79);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 20);
@@ -181,7 +182,7 @@ namespace AppReconocimientoFacial
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(12, 178);
+            this.txtEmail.Location = new System.Drawing.Point(16, 178);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(359, 22);
@@ -193,7 +194,7 @@ namespace AppReconocimientoFacial
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(389, 159);
+            this.label9.Location = new System.Drawing.Point(389, 154);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 20);
@@ -232,7 +233,7 @@ namespace AppReconocimientoFacial
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(401, 2);
+            this.label4.Location = new System.Drawing.Point(389, 2);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 20);
@@ -253,7 +254,7 @@ namespace AppReconocimientoFacial
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(401, 79);
+            this.label3.Location = new System.Drawing.Point(389, 79);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 20);
@@ -273,7 +274,7 @@ namespace AppReconocimientoFacial
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(12, 103);
+            this.txtEdad.Location = new System.Drawing.Point(16, 105);
             this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(128, 22);
@@ -294,7 +295,7 @@ namespace AppReconocimientoFacial
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(12, 26);
+            this.txtNombre.Location = new System.Drawing.Point(15, 26);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(363, 22);
@@ -470,8 +471,9 @@ namespace AppReconocimientoFacial
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(101, 295);
+            this.label12.Location = new System.Drawing.Point(84, 286);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(158, 20);
@@ -487,6 +489,7 @@ namespace AppReconocimientoFacial
             this.pictureBox1.Size = new System.Drawing.Size(189, 139);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Registro
             // 
