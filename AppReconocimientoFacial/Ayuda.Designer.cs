@@ -37,7 +37,7 @@ namespace AppReconocimientoFacial
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.label1.Location = new System.Drawing.Point(16, 55);
@@ -49,13 +49,13 @@ namespace AppReconocimientoFacial
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(554, 519);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(443, 422);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 46);
             this.button1.TabIndex = 1;
             this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Ayuda
@@ -67,7 +67,7 @@ namespace AppReconocimientoFacial
             this.ClientSize = new System.Drawing.Size(696, 580);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ayuda";
             this.Text = "Ayuda";
             this.ResumeLayout(false);
