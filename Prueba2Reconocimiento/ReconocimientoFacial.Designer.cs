@@ -40,6 +40,7 @@ namespace Prueba2Reconocimiento
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCapture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDetected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,20 +49,18 @@ namespace Prueba2Reconocimiento
             // 
             // picCapture
             // 
-            this.picCapture.Location = new System.Drawing.Point(-1, 13);
-            this.picCapture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCapture.Location = new System.Drawing.Point(12, 25);
             this.picCapture.Name = "picCapture";
-            this.picCapture.Size = new System.Drawing.Size(472, 524);
+            this.picCapture.Size = new System.Drawing.Size(354, 426);
             this.picCapture.TabIndex = 0;
             this.picCapture.TabStop = false;
             // 
             // btnCapture
             // 
             this.btnCapture.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCapture.Location = new System.Drawing.Point(851, 55);
-            this.btnCapture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCapture.Location = new System.Drawing.Point(656, 25);
             this.btnCapture.Name = "btnCapture";
-            this.btnCapture.Size = new System.Drawing.Size(153, 53);
+            this.btnCapture.Size = new System.Drawing.Size(115, 43);
             this.btnCapture.TabIndex = 1;
             this.btnCapture.Text = "Encender";
             this.btnCapture.UseVisualStyleBackColor = false;
@@ -70,10 +69,9 @@ namespace Prueba2Reconocimiento
             // btnDetectedFaces
             // 
             this.btnDetectedFaces.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDetectedFaces.Location = new System.Drawing.Point(851, 134);
-            this.btnDetectedFaces.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDetectedFaces.Location = new System.Drawing.Point(656, 74);
             this.btnDetectedFaces.Name = "btnDetectedFaces";
-            this.btnDetectedFaces.Size = new System.Drawing.Size(153, 48);
+            this.btnDetectedFaces.Size = new System.Drawing.Size(115, 39);
             this.btnDetectedFaces.TabIndex = 2;
             this.btnDetectedFaces.Text = "Detectar";
             this.btnDetectedFaces.UseVisualStyleBackColor = false;
@@ -82,10 +80,9 @@ namespace Prueba2Reconocimiento
             // btnAddPerson
             // 
             this.btnAddPerson.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAddPerson.Location = new System.Drawing.Point(857, 217);
-            this.btnAddPerson.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddPerson.Location = new System.Drawing.Point(656, 119);
             this.btnAddPerson.Name = "btnAddPerson";
-            this.btnAddPerson.Size = new System.Drawing.Size(145, 54);
+            this.btnAddPerson.Size = new System.Drawing.Size(115, 44);
             this.btnAddPerson.TabIndex = 3;
             this.btnAddPerson.Text = "Agregar Persona";
             this.btnAddPerson.UseVisualStyleBackColor = false;
@@ -93,28 +90,25 @@ namespace Prueba2Reconocimiento
             // 
             // picDetected
             // 
-            this.picDetected.Location = new System.Drawing.Point(857, 311);
-            this.picDetected.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picDetected.Location = new System.Drawing.Point(656, 183);
             this.picDetected.Name = "picDetected";
-            this.picDetected.Size = new System.Drawing.Size(145, 101);
+            this.picDetected.Size = new System.Drawing.Size(115, 82);
             this.picDetected.TabIndex = 4;
             this.picDetected.TabStop = false;
             // 
             // txtPersonName
             // 
-            this.txtPersonName.Location = new System.Drawing.Point(857, 466);
-            this.txtPersonName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPersonName.Location = new System.Drawing.Point(661, 304);
             this.txtPersonName.Name = "txtPersonName";
-            this.txtPersonName.Size = new System.Drawing.Size(145, 22);
+            this.txtPersonName.Size = new System.Drawing.Size(110, 20);
             this.txtPersonName.TabIndex = 5;
             // 
             // btnTrain
             // 
             this.btnTrain.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTrain.Location = new System.Drawing.Point(857, 496);
-            this.btnTrain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTrain.Location = new System.Drawing.Point(661, 343);
             this.btnTrain.Name = "btnTrain";
-            this.btnTrain.Size = new System.Drawing.Size(147, 43);
+            this.btnTrain.Size = new System.Drawing.Size(110, 45);
             this.btnTrain.TabIndex = 6;
             this.btnTrain.Text = "Reconocer";
             this.btnTrain.UseVisualStyleBackColor = false;
@@ -122,19 +116,17 @@ namespace Prueba2Reconocimiento
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(479, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(372, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(364, 256);
+            this.pictureBox1.Size = new System.Drawing.Size(273, 208);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(479, 283);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(372, 244);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(364, 256);
+            this.pictureBox2.Size = new System.Drawing.Size(273, 208);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
@@ -142,19 +134,32 @@ namespace Prueba2Reconocimiento
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(857, 442);
+            this.label1.Location = new System.Drawing.Point(658, 278);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Cedula";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(661, 406);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 45);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Mostrar Info";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ReconocimientoFacial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(804, 488);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -165,7 +170,6 @@ namespace Prueba2Reconocimiento
             this.Controls.Add(this.btnDetectedFaces);
             this.Controls.Add(this.btnCapture);
             this.Controls.Add(this.picCapture);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ReconocimientoFacial";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -190,6 +194,7 @@ namespace Prueba2Reconocimiento
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
