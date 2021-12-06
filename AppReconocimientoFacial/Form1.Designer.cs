@@ -53,21 +53,25 @@ namespace AppReconocimientoFacial
             // panel1
             // 
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(298, 74);
+            this.panel1.Location = new System.Drawing.Point(397, 91);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(531, 416);
+            this.panel1.Size = new System.Drawing.Size(708, 512);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(524, 413);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(699, 508);
             this.dataGridView1.TabIndex = 0;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroToolStripMenuItem,
             this.personalizarToolStripMenuItem,
@@ -75,21 +79,21 @@ namespace AppReconocimientoFacial
             this.ayudaToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(839, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1119, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // registroToolStripMenuItem
             // 
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
             this.registroToolStripMenuItem.Text = "Registro";
             this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
             // 
             // personalizarToolStripMenuItem
             // 
             this.personalizarToolStripMenuItem.Name = "personalizarToolStripMenuItem";
-            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.personalizarToolStripMenuItem.Text = "Citas";
             this.personalizarToolStripMenuItem.Click += new System.EventHandler(this.personalizarToolStripMenuItem_Click);
             // 
@@ -99,38 +103,52 @@ namespace AppReconocimientoFacial
             this.colorToolStripMenuItem,
             this.porDefectoToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
             this.ayudaToolStripMenuItem.Text = "Personalizar";
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.colorToolStripMenuItem.Text = "Color";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem1
             // 
             this.ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
-            this.ayudaToolStripMenuItem1.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem1.Size = new System.Drawing.Size(65, 24);
             this.ayudaToolStripMenuItem1.Text = "Ayuda";
             this.ayudaToolStripMenuItem1.Click += new System.EventHandler(this.ayudaToolStripMenuItem1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+<<<<<<< HEAD
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(641, 50);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 25);
+=======
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(482, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 37);
+>>>>>>> 150cb3529d80e27c36e390347c975a54cc1c8cea
             this.label2.TabIndex = 2;
             this.label2.Text = "Proximas citas";
             // 
             // button1
             // 
+<<<<<<< HEAD
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(104, 348);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
             this.button1.Location = new System.Drawing.Point(76, 314);
+>>>>>>> 150cb3529d80e27c36e390347c975a54cc1c8cea
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 41);
+            this.button1.Size = new System.Drawing.Size(175, 50);
             this.button1.TabIndex = 3;
             this.button1.Text = "Cliente nuevo";
             this.button1.UseVisualStyleBackColor = true;
@@ -138,9 +156,15 @@ namespace AppReconocimientoFacial
             // 
             // button2
             // 
+<<<<<<< HEAD
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(104, 417);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
             this.button2.Location = new System.Drawing.Point(76, 370);
+>>>>>>> 150cb3529d80e27c36e390347c975a54cc1c8cea
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 41);
+            this.button2.Size = new System.Drawing.Size(175, 50);
             this.button2.TabIndex = 4;
             this.button2.Text = "Cliente existente";
             this.button2.UseVisualStyleBackColor = true;
@@ -148,11 +172,18 @@ namespace AppReconocimientoFacial
             // 
             // pictureBox1
             // 
+<<<<<<< HEAD
+            this.pictureBox1.Location = new System.Drawing.Point(104, 106);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 176);
+=======
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(46, 130);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(205, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+>>>>>>> 150cb3529d80e27c36e390347c975a54cc1c8cea
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -164,9 +195,9 @@ namespace AppReconocimientoFacial
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 502);
+            this.ClientSize = new System.Drawing.Size(1119, 618);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -175,6 +206,7 @@ namespace AppReconocimientoFacial
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Centro de estetica y cuidado de la piel";
             this.Load += new System.EventHandler(this.Form1_Load);
