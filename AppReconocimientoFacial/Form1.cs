@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocios_DCU;
+using Prueba2Reconocimiento;
 
 namespace AppReconocimientoFacial
 {
@@ -63,7 +64,9 @@ namespace AppReconocimientoFacial
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //abre la ventana de reconocimiento facial
+            
+            ReconocimientoFacial reconocimientoFacial = new ReconocimientoFacial();
+            reconocimientoFacial.Show();
         }
 
         private void ayudaToolStripMenuItem1_Click(object sender, EventArgs e)
