@@ -118,13 +118,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Downloads\Telegram Desktop\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1.csproj">
+      <Project>{41623b2a-bca2-477f-a1bd-8670fa88116c}</Project>
+      <Name>WindowsFormsApp1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{1dea3771-a31f-4245-901b-8cf4669b1594}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Negocios_DCU\Negocios_DCU.csproj">
       <Project>{6576ee1b-1ec6-48e0-b14b-aa23429df31e}</Project>
       <Name>Negocios_DCU</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Prueba2Reconocimiento\Prueba2Reconocimiento.csproj">
-      <Project>{8ddb0a54-31b2-4962-977c-395571ecd796}</Project>
-      <Name>Prueba2Reconocimiento</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

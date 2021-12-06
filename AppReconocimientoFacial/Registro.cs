@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocios_DCU;
+using WindowsFormsApp1;
 
 namespace AppReconocimientoFacial
 {
@@ -86,8 +87,6 @@ namespace AppReconocimientoFacial
                 MessageBox.Show("Ha sido cancelado");
             }
 
-
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -123,7 +122,8 @@ namespace AppReconocimientoFacial
 
         private void btnCapturarRostro_Click(object sender, EventArgs e)
         {
-            //LLAMAR A RECONOCIMIENTO FACIAL DESDE AQUI
+            Reconocer reconocer = new Reconocer();
+            reconocer.Show();
         }
     }
 

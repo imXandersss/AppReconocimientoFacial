@@ -270,7 +270,7 @@ namespace Prueba2Reconocimiento
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int cedula = 2;
+            int cedula = Convert.ToInt32(txtPersonName.Text);
             DatosClase datosClase = new DatosClase();
 
             datosClase.InformacionCliente(cedula);

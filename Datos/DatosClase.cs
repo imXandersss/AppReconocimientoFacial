@@ -9,7 +9,9 @@ using System.Data.SqlClient;
 namespace Datos
 {
     public class DatosClase
+   
     {
+       
         private static string connectionString = "Server = DESKTOP-3B0O51K\\MYSERVER;DataBase=Estetica;Integrated Security = true";
 
         SqlConnection conexion = new SqlConnection(connectionString);
@@ -33,6 +35,19 @@ namespace Datos
         SqlDataReader leer;
         DataTable tabla = new DataTable();
         SqlCommand comando = new SqlCommand();
+        private static string nombre;
+        private static string fecha;
+        private static string condicionPiel;
+        private static string enfermedad;
+        private static string nota;
+
+
+        public static string Nombre { get => nombre; set => nombre = value; }
+        public static string Fecha { get => fecha; set => fecha = value; }
+        public static string CondicionPiel { get => condicionPiel; set => condicionPiel = value; }
+        public static string Enfermedad { get => enfermedad; set => enfermedad = value; }
+        public static string Nota { get => nota; set => nota = value; }
+
         public DataTable Mostrar()
         {
 
@@ -123,9 +138,10 @@ namespace Datos
             CloseBD();
         }
 
-       //DISCUTIR CON BRYAN COMO HACER ESTA PARTE, CONECTAR CON INFORMACION CLIENTE Y CON RECONOCIMIENTO FACIAL
+
         public void InformacionCliente(int cedula)
         {
+
             comando.Connection = OpenBD();
             comando.CommandText = "InfoCliente";
             comando.CommandType = CommandType.StoredProcedure;
@@ -135,11 +151,11 @@ namespace Datos
             leer = comando.ExecuteReader();
             if (leer.Read())
             {
-                //Nombre = leer["nombre"].ToString();
-                //CondicionPiel = leer["condicionPiel"].ToString();
-                //fecha = leer["fecha"].ToString();
-                //Enfermedad = leer["enfermedades"].ToString();
-                //Nota = leer["nota"].ToString();
+                Nombre = leer["nombre"].ToString();
+                CondicionPiel = leer["condicionPiel"].ToString();
+                fecha = leer["fecha"].ToString();
+                Enfermedad = leer["enfermedades"].ToString();
+                Nota = leer["nota"].ToString();
             }
             leer.Close();
             comando.Parameters.Clear();

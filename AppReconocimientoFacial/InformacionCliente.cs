@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Datos;
 
 namespace AppReconocimientoFacial
 {
@@ -15,6 +16,11 @@ namespace AppReconocimientoFacial
         public InformacionCliente()
         {
             InitializeComponent();
+            txtNombre.Text= DatosClase.Nombre;
+            txtEnfermedad.Text = DatosClase.Enfermedad;
+            txtNota.Text = DatosClase.Nota;
+            fechaPicker.Value = Convert.ToDateTime( DatosClase.Fecha);
+            textBox1.Text = DatosClase.CondicionPiel;
         }
 
         private void txtEnfermedad_TextChanged(object sender, EventArgs e)
