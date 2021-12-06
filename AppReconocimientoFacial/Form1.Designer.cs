@@ -43,6 +43,7 @@ namespace AppReconocimientoFacial
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.porDefectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -95,7 +96,8 @@ namespace AppReconocimientoFacial
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.colorToolStripMenuItem});
+            this.colorToolStripMenuItem,
+            this.porDefectoToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.ayudaToolStripMenuItem.Text = "Personalizar";
@@ -117,16 +119,16 @@ namespace AppReconocimientoFacial
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(481, 41);
+            this.label2.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(482, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 20);
+            this.label2.Size = new System.Drawing.Size(149, 37);
             this.label2.TabIndex = 2;
             this.label2.Text = "Proximas citas";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(78, 283);
+            this.button1.Location = new System.Drawing.Point(76, 314);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 41);
             this.button1.TabIndex = 3;
@@ -136,7 +138,7 @@ namespace AppReconocimientoFacial
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(78, 339);
+            this.button2.Location = new System.Drawing.Point(76, 370);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 41);
             this.button2.TabIndex = 4;
@@ -146,11 +148,19 @@ namespace AppReconocimientoFacial
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(78, 86);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(46, 130);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 143);
+            this.pictureBox1.Size = new System.Drawing.Size(205, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // porDefectoToolStripMenuItem
+            // 
+            this.porDefectoToolStripMenuItem.Name = "porDefectoToolStripMenuItem";
+            this.porDefectoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porDefectoToolStripMenuItem.Text = "Por Defecto";
             // 
             // Form1
             // 
@@ -193,6 +203,7 @@ namespace AppReconocimientoFacial
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripMenuItem porDefectoToolStripMenuItem;
     }
 }
 

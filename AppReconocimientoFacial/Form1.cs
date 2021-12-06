@@ -71,7 +71,8 @@ namespace AppReconocimientoFacial
 
         private void ayudaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //abrir una ventana que diga las informaciones importantes a saber
+            Ayuda ayuda = new Ayuda();
+            ayuda.ShowDialog();
         }
     }
 }
