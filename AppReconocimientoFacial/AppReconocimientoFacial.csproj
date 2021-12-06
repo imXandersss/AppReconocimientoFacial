@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonfoCRUD.jpg" />
+    <None Include="Resources\fonfoCRUD.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

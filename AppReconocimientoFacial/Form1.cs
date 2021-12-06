@@ -54,6 +54,7 @@ namespace AppReconocimientoFacial
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 Color color = colorDialog1.Color;
+                this.BackgroundImage = null;
                 this.BackColor = color;
                 
             }
@@ -73,6 +74,23 @@ namespace AppReconocimientoFacial
         {
             Ayuda ayuda = new Ayuda();
             ayuda.ShowDialog();
+        }
+
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.KeyCode == Keys.N))
+
+            {
+
+                Registro registro = new Registro();
+                registro.ShowDialog();
+            }
+        }
+
+        private void porDefectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Properties.Resources.fonfoCRUD;
         }
     }
 }
