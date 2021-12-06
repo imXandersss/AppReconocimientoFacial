@@ -14,8 +14,14 @@ using Emgu.CV.CvEnum;
 using System.IO;
 using System.Threading;
 using System.Diagnostics;
+using Datos;
+using System.Data.SqlClient;
+
+
 namespace Prueba2Reconocimiento
 {
+    //private DatosClase datosClase = DatosClase();
+
     public partial class ReconocimientoFacial : Form
     {
 
@@ -261,6 +267,19 @@ namespace Prueba2Reconocimiento
         private void btnTrain_Click_1(object sender, EventArgs e)
         {
             TrainImagesFromDir();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //// hacer la conexion con la base de datos
+            //SqlCommand comando = new SqlCommand("SELECT * FROM Cliente WHERE cedula = @ID", conexion);
+            //comando.Parameters.AddWithValue("@ID", cedula);
+            //conexion.OpenBD();
+            //SqlDataReader registro = comando.ExecuteReader();
+            //if (registro.Read())
+            //{
+            //    //aqui van los txtbox txtNombre.Text = registro["nombre"].ToString();
+            //}
         }
     }
 
