@@ -83,6 +83,16 @@ namespace AppReconocimientoFacial.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap encendido {
+            get {
+                object obj = ResourceManager.GetObject("encendido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap estetica {
             get {
                 object obj = ResourceManager.GetObject("estetica", resourceCulture);
@@ -106,6 +116,26 @@ namespace AppReconocimientoFacial.Properties {
         internal static System.Drawing.Bitmap guardar_el_archivo {
             get {
                 object obj = ResourceManager.GetObject("guardar-el-archivo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap informacion {
+            get {
+                object obj = ResourceManager.GetObject("informacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reconocimiento_facial {
+            get {
+                object obj = ResourceManager.GetObject("reconocimiento-facial", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

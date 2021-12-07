@@ -46,9 +46,11 @@ namespace AppReconocimientoFacial
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(52, 392);
+            this.button1.Image = global::AppReconocimientoFacial.Properties.Resources.encendido;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(105, 392);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 38);
+            this.button1.Size = new System.Drawing.Size(112, 38);
             this.button1.TabIndex = 2;
             this.button1.Text = "Encender";
             this.button1.UseVisualStyleBackColor = false;
@@ -57,17 +59,21 @@ namespace AppReconocimientoFacial
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(190, 392);
+            this.button2.Image = global::AppReconocimientoFacial.Properties.Resources.guardar_el_archivo;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(223, 392);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 38);
+            this.button2.Size = new System.Drawing.Size(108, 38);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Guardar imagen";
+            this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Image = global::AppReconocimientoFacial.Properties.Resources.reconocimiento_facial;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(337, 392);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(118, 38);
@@ -78,9 +84,9 @@ namespace AppReconocimientoFacial
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(58, 256);
+            this.textBox1.Location = new System.Drawing.Point(71, 256);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 20);
+            this.textBox1.Size = new System.Drawing.Size(150, 20);
             this.textBox1.TabIndex = 5;
             // 
             // label1
@@ -88,7 +94,7 @@ namespace AppReconocimientoFacial
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 260);
+            this.label1.Location = new System.Drawing.Point(9, 256);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 16);
             this.label1.TabIndex = 6;
@@ -113,17 +119,21 @@ namespace AppReconocimientoFacial
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Image = global::AppReconocimientoFacial.Properties.Resources.informacion;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(461, 392);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(121, 38);
             this.button4.TabIndex = 7;
-            this.button4.Text = "Mostrar informacion";
+            this.button4.Text = "Mostrar info";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.Image = global::AppReconocimientoFacial.Properties.Resources.salida_de_emergencia;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(588, 392);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(111, 38);
@@ -150,7 +160,7 @@ namespace AppReconocimientoFacial
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FaceRecognition";
-            this.Text = "FaceRecognition";
+            this.Text = "Reconocimiento Facial";
             this.Load += new System.EventHandler(this.FaceRecognition_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
