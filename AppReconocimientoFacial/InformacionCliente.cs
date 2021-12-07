@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Datos;
+using Negocios_DCU;
 
 namespace AppReconocimientoFacial
 {
@@ -16,32 +16,28 @@ namespace AppReconocimientoFacial
         public InformacionCliente()
         {
             InitializeComponent();
-            txtNombre.Text= DatosClase.Nombre;
-            txtEnfermedad.Text = DatosClase.Enfermedad;
-            txtNota.Text = DatosClase.Nota;
-            fechaPicker.Value = Convert.ToDateTime( DatosClase.Fecha);
-            textBox1.Text = DatosClase.CondicionPiel;
+
         }
 
-        private void txtEnfermedad_TextChanged(object sender, EventArgs e)
-        {
-            txtEnfermedad.ReadOnly = true;
-        }
+        //private void txtEnfermedad_TextChanged(object sender, EventArgs e)
+        //{
+        //    txtEnfermedad.ReadOnly = true;
+        //}
 
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-            txtNombre.ReadOnly = true;
-        }
+        //private void txtNombre_TextChanged(object sender, EventArgs e)
+        //{
+        //    txtNombre.ReadOnly = true;
+        //}
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            txtEnfermedad.ReadOnly = true;
-        }
+        //private void textBox1_TextChanged(object sender, EventArgs e)
+        //{
+        //    txtEnfermedad.ReadOnly = true;
+        //}
 
-        private void txtNota_TextChanged(object sender, EventArgs e)
-        {
-            txtNota.ReadOnly = true;
-        }
+        //private void txtNota_TextChanged(object sender, EventArgs e)
+        //{
+        //    txtNota.ReadOnly = true;
+        //}
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -53,6 +49,38 @@ namespace AppReconocimientoFacial
             this.Close();
             Form1 form1 = new Form1();
             form1.Show();
+        }
+
+        private void MostrarCliente()
+        {
+            Class1 objeto = new Class1();
+            dataGridView1.DataSource = objeto.InfoCliente(Convert.ToInt32(FaceRecognition.Cedula));
+        }
+
+        private void InformacionCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void InformacionCliente_Load(object sender, EventArgs e)
+        //{
+        //    MostrarCliente();
+        //    //fechaPicker.Format = DateTimePickerFormat.Short;
+        //    //fechaPicker.Value = DateTime.Today;
+
+        //    //DatosClase datosClase = new DatosClase();
+        //    //datosClase.InformacionCliente(Convert.ToInt32(FaceRecognition.Cedula));
+
+        //    //txtNombre.Text = DatosClase.Nombre;
+        //    //txtEnfermedad.Text = DatosClase.Enfermedad;
+        //    //txtNota.Text = DatosClase.Nota;
+        //    ////fechaPicker.Value = Convert.ToDateTime( DatosClase.Fecha);
+        //    //textBox1.Text = DatosClase.CondicionPiel;
+        //}
+
+        private void InformacionCliente_Load_1(object sender, EventArgs e)
+        {
+            MostrarCliente();
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocios_DCU;
-using WindowsFormsApp1;
+
 
 namespace AppReconocimientoFacial
 {
@@ -65,7 +65,7 @@ namespace AppReconocimientoFacial
 
         private void button2_Click(object sender, EventArgs e)
         {
-           WindowsFormsApp1.Reconocer reconocer = new Reconocer();
+           FaceRecognition reconocer = new FaceRecognition();
             reconocer.Show();
            
         }

@@ -54,5 +54,12 @@ namespace Negocios_DCU
             tabla = objetoCD.Buscar(Descripcion);
             return tabla;
         }
+
+        public DataTable InfoCliente(int cedula)
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoCD.Cliente(cedula);
+            return tabla;
+        }
     }
 }

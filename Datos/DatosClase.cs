@@ -61,6 +61,20 @@ namespace Datos
 
         }
 
+        public DataTable Cliente(int cedula)
+        {
+
+            comando.Connection = OpenBD();
+            comando.CommandText = "InfoCliente";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@ID", cedula);
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            CloseBD();
+            return tabla;
+
+        }
+
         public DataTable Buscar(string nombreCliente)
         {
             comando.Connection = OpenBD();
@@ -139,28 +153,37 @@ namespace Datos
         }
 
 
-        public void InformacionCliente(int cedula)
-        {
+        //public void InformacionCliente(int cedula)
+        //{
+        //    try
+        //    {
+        //        comando.Connection = OpenBD();
+        //        comando.CommandText = "InfoCliente";
+        //        comando.CommandType = CommandType.StoredProcedure;
 
-            comando.Connection = OpenBD();
-            comando.CommandText = "InfoCliente";
-            comando.CommandType = CommandType.StoredProcedure;
+        //        comando.Parameters.AddWithValue("@ID", cedula);
 
-            comando.Parameters.AddWithValue("@ID", cedula);
-            
-            leer = comando.ExecuteReader();
-            if (leer.Read())
-            {
-                Nombre = leer["nombre"].ToString();
-                CondicionPiel = leer["condicionPiel"].ToString();
-                fecha = leer["fecha"].ToString();
-                Enfermedad = leer["enfermedades"].ToString();
-                Nota = leer["nota"].ToString();
-            }
-            leer.Close();
-            comando.Parameters.Clear();
-            CloseBD();
-        }
+        //        leer = comando.ExecuteReader();
+
+        //        if (leer.Read())
+        //        {
+        //            Nombre = leer["nombre"].ToString();
+        //            CondicionPiel = leer["condicionPiel"].ToString();
+        //            fecha = leer["fecha"].ToString();
+        //            Enfermedad = leer["enfermedades"].ToString();
+        //            Nota = leer["nota"].ToString();
+        //        }
+        //        leer.Close();
+        //        comando.Parameters.Clear();
+        //        CloseBD();
+
+        //    } catch(Exception e)
+        //    {
+        //        Console.WriteLine(e);
+        //    }
+
+          
+        //}
 
         //public void modificarCliente(string nombre, int cedula, int edad, string genero, string nacionalidad, string email, string telefono, string tipoPiel, string condicionPiel, string enfermedades, string nota)
         //{
